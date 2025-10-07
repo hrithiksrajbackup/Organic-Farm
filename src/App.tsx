@@ -24,7 +24,7 @@ function App() {
 
   return (
     <CartProvider>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-coconut-50">
         <Header
           onCartClick={() => setShowCart(true)}
           onCategoryClick={(categoryId) => setSelectedCategory(categoryId)}
@@ -36,12 +36,14 @@ function App() {
           {!selectedCategory ? (
             <>
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-emerald-900 mb-2">
-                  Shop by Category
-                </h2>
-                <p className="text-teal-600 mb-8">
-                  Explore our authentic Kerala collections
-                </p>
+                <div className="text-center mb-12">
+                  <h2 className="text-4xl md:text-5xl font-display font-bold text-earth-900 mb-3">
+                    Shop by Category
+                  </h2>
+                  <p className="text-lg text-earth-600">
+                    Explore our authentic Kerala collections
+                  </p>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {categories.map((category) => (
                     <CategoryCard
@@ -54,12 +56,14 @@ function App() {
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold text-emerald-900 mb-2">
-                  Featured Products
-                </h2>
-                <p className="text-teal-600 mb-8">
-                  Our handpicked selection of premium Kerala products
-                </p>
+                <div className="text-center mb-12">
+                  <h2 className="text-4xl md:text-5xl font-display font-bold text-earth-900 mb-3">
+                    Featured Products
+                  </h2>
+                  <p className="text-lg text-earth-600">
+                    Our handpicked selection of premium Kerala products
+                  </p>
+                </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                   {filteredProducts.map((product) => (
                     <ProductCard
@@ -76,20 +80,22 @@ function App() {
               <div className="mb-8">
                 <button
                   onClick={() => setSelectedCategory(null)}
-                  className="text-emerald-700 hover:text-emerald-900 font-medium mb-4"
+                  className="text-palm-700 hover:text-palm-900 font-semibold mb-6 flex items-center gap-2 px-4 py-2 rounded-xl hover:bg-palm-50 transition-all"
                 >
                   ← Back to Home
                 </button>
-                <h2 className="text-3xl font-bold text-emerald-900 mb-2">
-                  {selectedCategory === 'all'
-                    ? 'All Products'
-                    : categories.find((c) => c.id === selectedCategory)?.name}
-                </h2>
-                <p className="text-teal-600">
-                  {selectedCategory === 'all'
-                    ? 'Browse our complete collection'
-                    : categories.find((c) => c.id === selectedCategory)?.description}
-                </p>
+                <div className="text-center mb-12">
+                  <h2 className="text-4xl md:text-5xl font-display font-bold text-earth-900 mb-3">
+                    {selectedCategory === 'all'
+                      ? 'All Products'
+                      : categories.find((c) => c.id === selectedCategory)?.name}
+                  </h2>
+                  <p className="text-lg text-earth-600">
+                    {selectedCategory === 'all'
+                      ? 'Browse our complete collection'
+                      : categories.find((c) => c.id === selectedCategory)?.description}
+                  </p>
+                </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -112,34 +118,34 @@ function App() {
             </div>
           )}
 
-          <div className="mt-16 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 border-2 border-emerald-200">
-            <div className="max-w-3xl mx-auto text-center">
-              <h3 className="text-2xl font-bold text-emerald-900 mb-4">
+          <div className="mt-20 bg-gradient-to-r from-palm-50 via-coconut-100 to-backwater-50 rounded-3xl p-12 shadow-organic-lg kerala-pattern border border-earth-200/50">
+            <div className="max-w-4xl mx-auto text-center">
+              <h3 className="text-3xl md:text-4xl font-display font-bold text-earth-900 mb-6">
                 Why Choose God's Own Goodies?
               </h3>
-              <div className="grid md:grid-cols-3 gap-6 mt-8">
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <div className="text-3xl mb-3">✓</div>
-                  <h4 className="font-semibold text-emerald-900 mb-2">
+              <div className="grid md:grid-cols-3 gap-8 mt-10">
+                <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-organic transition-organic hover:shadow-organic-lg hover:-translate-y-1">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-palm-400 to-palm-500 rounded-2xl flex items-center justify-center text-3xl text-white">✓</div>
+                  <h4 className="font-display font-bold text-earth-900 mb-3 text-lg">
                     100% Authentic
                   </h4>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-earth-600 leading-relaxed">
                     Sourced directly from Kerala artisans and farmers
                   </p>
                 </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <div className="text-3xl mb-3">🌿</div>
-                  <h4 className="font-semibold text-emerald-900 mb-2">Natural & Pure</h4>
-                  <p className="text-sm text-gray-600">
+                <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-organic transition-organic hover:shadow-organic-lg hover:-translate-y-1">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-palm-400 to-palm-500 rounded-2xl flex items-center justify-center text-3xl">🌿</div>
+                  <h4 className="font-display font-bold text-earth-900 mb-3 text-lg">Natural & Pure</h4>
+                  <p className="text-sm text-earth-600 leading-relaxed">
                     No artificial additives or preservatives
                   </p>
                 </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <div className="text-3xl mb-3">💚</div>
-                  <h4 className="font-semibold text-emerald-900 mb-2">
+                <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-organic transition-organic hover:shadow-organic-lg hover:-translate-y-1">
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-palm-400 to-palm-500 rounded-2xl flex items-center justify-center text-3xl">💚</div>
+                  <h4 className="font-display font-bold text-earth-900 mb-3 text-lg">
                     Supporting Local
                   </h4>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-earth-600 leading-relaxed">
                     Every purchase supports Kerala communities
                   </p>
                 </div>

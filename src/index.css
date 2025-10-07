@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-coconut-50 text-earth-900;
+  }
+}
+
+@layer components {
+  .shadow-organic {
+    box-shadow:
+      0 2px 8px -2px rgba(99, 88, 70, 0.1),
+      0 6px 20px -3px rgba(99, 88, 70, 0.08);
+  }
+
+  .shadow-organic-lg {
+    box-shadow:
+      0 4px 16px -4px rgba(99, 88, 70, 0.15),
+      0 12px 32px -8px rgba(99, 88, 70, 0.12);
+  }
+
+  .kerala-pattern {
+    background-image:
+      radial-gradient(circle at 20% 50%, rgba(125, 191, 98, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(190, 135, 83, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(93, 165, 66, 0.02) 0%, transparent 50%);
+  }
+
+  .wave-pattern {
+    background:
+      linear-gradient(135deg, rgba(185, 229, 254, 0.1) 25%, transparent 25%),
+      linear-gradient(225deg, rgba(185, 229, 254, 0.1) 25%, transparent 25%),
+      linear-gradient(45deg, rgba(185, 229, 254, 0.1) 25%, transparent 25%),
+      linear-gradient(315deg, rgba(185, 229, 254, 0.1) 25%, transparent 25%);
+    background-size: 80px 80px;
+    background-position: 0 0, 0 40px, 40px -40px, -40px 0px;
+  }
+
+  .texture-organic {
+    position: relative;
+  }
+
+  .texture-organic::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .transition-organic {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .houseboat-curve {
+    clip-path: ellipse(100% 100% at 50% 0%);
+  }
+}
