@@ -21,8 +21,8 @@ export function Header({ onCartClick, onCategoryClick }: HeaderProps) {
               <span className="text-2xl">🌴</span>
             </div>
             <div>
-              <h1 className="text-2xl font-bold tracking-tight">Kerala Treasures</h1>
-              <p className="text-xs text-emerald-100">കേരള നിധികൾ</p>
+              <h1 className="text-2xl font-bold tracking-tight">God's Own Goodies</h1>
+              <p className="text-xs text-emerald-100">Authentic Kerala Products</p>
             </div>
           </div>
 

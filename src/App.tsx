@@ -40,7 +40,7 @@ function App() {
                   Shop by Category
                 </h2>
                 <p className="text-teal-600 mb-8">
-                  വിഭാഗങ്ങൾ അനുസരിച്ച് ഷോപ്പ് ചെയ്യുക
+                  Explore our authentic Kerala collections
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {categories.map((category) => (
@@ -115,7 +115,7 @@ function App() {
           <div className="mt-16 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 border-2 border-emerald-200">
             <div className="max-w-3xl mx-auto text-center">
               <h3 className="text-2xl font-bold text-emerald-900 mb-4">
-                Why Choose Kerala Treasures?
+                Why Choose God's Own Goodies?
               </h3>
               <div className="grid md:grid-cols-3 gap-6 mt-8">
                 <div className="bg-white p-6 rounded-xl shadow-sm">

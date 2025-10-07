@@ -10,16 +10,12 @@ export function Hero() {
           </div>
 
           <h2 className="text-5xl md:text-6xl font-bold text-emerald-900 mb-6 leading-tight">
-            Discover the Essence<br />of Kerala
+            Authentic Flavors from<br />God's Own Country
           </h2>
 
-          <p className="text-xl text-emerald-700 mb-4 leading-relaxed">
-            സ്വന്തം നാട്ടിലെ രുചികളും സംസ്കാരവും നിങ്ങളുടെ വീട്ടിലേക്ക്
-          </p>
-
           <p className="text-lg text-teal-600 mb-10 max-w-2xl mx-auto">
-            Authentic spices, traditional snacks, handcrafted treasures, and more from the heart of Kerala.
-            Each product carries the legacy of our rich cultural heritage.
+            Experience the rich taste of Kerala with premium spices, traditional snacks,
+            aromatic tea and coffee. Each product brings you the authentic essence of our heritage.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
